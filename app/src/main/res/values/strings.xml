@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">没取名浏览器</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_settings">Settings</string>
+    <string name="tagandsaving">书签/历史</string>
+    <string name="download">下载</string>
+    <string name="refresh">刷新</string>
+    <string name="setting">设置</string>
+    <string name="unregister">退出</string>
+    <string name="nightday">夜间</string>
+    <string name="title_activity_setting">SettingActivity</string>
+    <string name="preference_screen_setSearchEngine">searchEnginePreference</string>
+    <string name="preference_screen_setLoadPic">loadWidthPic</string>
+    <string name="preference_screen_setLocPermit">locationPermission</string>
+    <string name="preference_screen_setAsDefault">setAsDefault</string>
+    <string name="preference_screen_deleteInfo">deleteViewedHistory</string>
+    <string name="preference_screen_allow_cookie">allowcookies</string>
+    <string-array name="searchEngineName">
+        <item>百度</item>
+        <item>搜狗</item>
+        <item>必应</item>
+    </string-array>
+    <string-array name="searchEngineAddress">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="searchEngineAddressHttp">
+        <item>http://m.baidu.com/s?word=</item>
+        <item>http://wap.sogou.com/web/searchList.jsp?&amp;keyword=</item>
+        <item>http://cn.bing.com/search?q=</item>
+    </string-array>
+</resources>

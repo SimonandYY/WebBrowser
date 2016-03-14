@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListPreference android:key="@string/preference_screen_setSearchEngine"
+        android:title="默认搜索引擎"
+        android:defaultValue="0"
+        android:summary="百度"
+        android:entries="@array/searchEngineName"
+        android:entryValues="@array/searchEngineAddress"
+        android:dialogTitle="选择默认搜索引擎"/>
+    <CheckBoxPreference
+        android:key="@string/preference_screen_setLoadPic"
+        android:title="开启无图"
+        android:defaultValue="true"/>
+    <CheckBoxPreference
+        android:key="@string/preference_screen_setLocPermit"
+        android:title="允许网页获取位置信息？"
+        android:defaultValue="false"/>
+    <CheckBoxPreference android:key="@string/preference_screen_setAsDefault"
+        android:title="设为默认浏览器"
+        android:defaultValue="false"
+        />
+    <CheckBoxPreference android:key="@string/preference_screen_allow_cookie"
+        android:title="允许Cookie"
+        android:defaultValue="true"
+        />
+    <Preference
+        android:key="@string/preference_screen_deleteInfo" android:title="删除浏览信息"/>
+    <Preference android:key="checkUpdate"
+        android:title="检查更新"/>
+
+</PreferenceScreen>

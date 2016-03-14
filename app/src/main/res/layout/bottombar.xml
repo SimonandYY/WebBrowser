@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@android:color/background_light"
+    >
+<FrameLayout
+    android:id="@+id/setting_waper"
+    android:layout_width="50dp"
+    android:layout_height="50dp"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true">
+    <Button
+        android:visibility="gone"
+        android:id="@+id/downloading_indicator"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:background="@drawable/round_downloading_indicator"
+        android:text="0"
+        android:textSize="10sp"
+        android:layout_gravity="right"
+        android:textColor="#ffffff"
+    />
+    <ImageView
+        android:id="@+id/setting"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:adjustViewBounds="true"
+        android:padding="6dp"
+        android:src="@drawable/more" />
+</FrameLayout>
+
+    <ImageView
+        android:id="@+id/forward"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="20dp"
+        android:layout_toLeftOf="@id/setting_waper"
+        android:adjustViewBounds="true"
+        android:padding="2dp"
+        android:src="@drawable/ic_action_forward_default" />
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginRight="20dp"
+        android:layout_toLeftOf="@id/forward"
+        android:adjustViewBounds="true"
+        android:padding="2dp"
+        android:src="@drawable/ic_action_backword_default" />
+
+
+    <FrameLayout
+        android:id="@+id/newPageIndicater"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@id/setting_waper">
+
+        <Button
+            android:id="@+id/pages"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+
+            android:background="@drawable/ic_action_pages"
+            android:padding="0dp"
+            android:text="1"
+            android:textSize="10sp"
+            android:textStyle="bold" />
+        <ImageView
+            android:alpha="0"
+            android:id="@+id/indicator"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/indicator"/>
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/home"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@id/newPageIndicater"
+        android:adjustViewBounds="true"
+        android:padding="10dp"
+        android:src="@drawable/home" />
+
+</RelativeLayout>

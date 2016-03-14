@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#dd2b2b2b"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="新窗口打开"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="打开链接"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="后台打开"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="复制链接"
+
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="分享链接"
+        android:textColor="#ffffff" />
+</LinearLayout>

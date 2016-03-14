@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#dd2b2b2b"
+    android:orientation="vertical">
+
+    <TextView
+
+        android:id="@+id/pic_source_save"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:text="保存图片"
+        android:textColor="#ffffff" />
+    <TextView
+
+        android:id="@+id/pic_source_open_in_background"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:text="后台打开"
+        android:textColor="#ffffff" />
+    <TextView
+        android:id="@+id/pic_source_new_window"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:text="新窗口打开"
+        android:textColor="#ffffff" />
+    <TextView
+        android:id="@+id/pic_source_share"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:text="分享图片"
+        android:textColor="#ffffff" />
+
+
+</LinearLayout>

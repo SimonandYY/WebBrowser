@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.study.zhiyang.webbrowser">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CLEAR_APP_CACHE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <application
+        android:name="com.study.zhiyang.utils.ContextUtils"
+        android:allowBackup="true"
+        android:icon="@drawable/leaf"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:configChanges="orientation|screenSize"
+            android:hardwareAccelerated="true"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="adjustPan|stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.APP_BROWSER"/>
+                <data android:scheme="http"/>
+            </intent-filter>
+
+                <!--<data android:scheme="https"/>-->
+
+
+        </activity>
+        <!--<activity-->
+
+        <!--android:name=".SettingActivity"-->
+        <!--android:label="@string/title_activity_setting"></activity>-->
+        <activity
+            android:name="com.study.zhiyang.download.DownloadListActivity"
+            android:theme="@style/translucent" />
+        <activity
+            android:name="com.study.zhiyang.history.HistoryActivity"
+
+            android:theme="@style/translucent" />
+        <activity
+            android:name=".SettingActivity"
+             />
+    </application>
+
+</manifest>
